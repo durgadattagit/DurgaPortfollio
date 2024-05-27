@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: None;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 23px;
+      }
+      .left {
+        font-size: 1.8rem;
+        font-family: "Copperplate", Times, serif;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px;
+      }
+      .firstsection div {
+        width: 30%;
+        margin: 30px;
+      }
+      .leftpart {
+        /* background-color: red; */
+        padding: 20px;
+        font-size: xx-large;
+      }
+      /* .rightpart {
+        background-color: red;
+      } */
+      .rightpart img {
+        border-radius: 8px;
+        width: 200px;
+        /* padding: 20px; */
+      }
+      .purple {
+        color: rgb(54, 135, 120);
+        font-size: 4rem;
+        font-family: "Arial", Times, serif;
+        font-weight: bold;
+      }
+      .right li a {
+        text-decoration: none;
+        color: white;
+      }
+      .right li a:hover {
+        color: rgb(210, 71, 108);
+        font-size: 1.04rem;
+      }
+      .left a {
+        text-decoration: none;
+        color: white;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .footer li a {
+        text-decoration: none;
+        color: white;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("abstract-shiny.avif"); /* Replace with your image path */
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .content {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Semi-transparent background for content */
+        padding: 20px;
+        margin: 50px auto;
+        width: 80%;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>x</p>
+      <nav>
+        <div class="left"><a href="">Portfolio.</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">skill</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="Work_Experience.html">Work Experience</a></li>
+            <!-- <li><a href="block.html">Blog</a></li> -->
+            <li><a href="contsct _info.html">contact info</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftpart">
+          Hello, my name is<span class="purple"> Durgadatta Mishara</span>
+          <span id="element"></span>
+        </div>
+        <div class="rightpart">
+          <!-- <img src="Durgadatta.img.png" alt="" /> -->
+        </div>
+      </section>
+      <section class="secondsection"></section>
+    </main>
+    <footer class="footer">
+      <div class="footer_thard"></div>
+      <div class="footer_forth"></div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["And i'm a Data Science Enthusiast"],
+        typeSpeed: 70,
+      });
+    </script>
+  </body>
+</html>
